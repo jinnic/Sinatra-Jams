@@ -1,0 +1,10 @@
+<h3><%=@artist.name%></h3>
+<p> age : <%=@artist.age%></p>
+<p> bio : <%=@artist.bio%></p><br>
+
+
+<a href='/artists/<%=@artist.id%>/edit'>edit</a>
+<form method="POST" action='/artists/<%=@artist.id%>'>
+    <input type="hidden" name="_method" value="delete">  
+    <input type="submit" value='delete'>  
+</form>
